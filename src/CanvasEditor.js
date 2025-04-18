@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { fabric } from 'fabric';
 
-function CanvasEditor({ imageUrl }) {
+function CanvasEditor({ imageUrl, goBack }) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -92,6 +92,9 @@ function CanvasEditor({ imageUrl }) {
         </button>
         <button onClick={download} className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800">
           Download
+        </button>
+        <button onClick={goBack} className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+          Back to Search
         </button>
       </div>
     </div>

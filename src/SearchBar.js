@@ -38,7 +38,7 @@ export default function SearchBar({ onSelectImage }) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-200">
       <div className="flex gap-2 mb-4">
         <input
           type="text"
